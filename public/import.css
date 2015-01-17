@@ -1,0 +1,22 @@
+@chrset "utf-8";
+body {
+	background-color: white;
+	border: 1px solid darkgreen;
+	margin: 10px;
+}
+
+#wrapper {
+	margin: 5px;
+	background-color: lightsteelblue ;
+}
+
+#header {
+	padding: 10px;
+	border: 1px solid dimgray;
+	font-size: x-small;
+}
+
+#footer {
+    padding: 10px;
+	border: 1px solid dimgray;
+}
