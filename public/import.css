@@ -20,3 +20,11 @@ body {
     padding: 10px;
 	border: 1px solid dimgray;
 }
+
+.section {
+	border: 1px solid black;
+}
+
+.vewertable {
+	border-right: 1px solid dimgray;
+}
