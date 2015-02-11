@@ -1,4 +1,62 @@
-@chrset "utf-8";
+@charset "utf-8";
+
+/*import.css*/
+
+/* layouts
+========================================== */
+/*@import "base/reset.css";*/
+/*@import "base/structure.css";*/
+/*@import "base/header.css";*/
+/*@import "base/contents.css";*/
+/*@import "base/footer.css";*/
+
+/*reset.css*/
+/* =======================================
+    Browser Reset CSS
+    Last Up Date 0000/00/00
+========================================== */
+
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,
+p,blockquote,table,th,td {margin: 0; padding: 0;}
+
+html,body {background: #FFF; color: #000;}
+
+body {font:13px/1 "メイリオ","Meiryo","ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",sans-serif;}
+* html body {font-size: small;}
+*:first-child+html body {font-size: small;}
+
+img {border: 0; vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6 {clear: both; font-size: 100%; font-weight: normal;}
+
+ul,dl,ol {text-indent: 0;}
+li {list-style: none;}
+
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal; font-weight: normal;}
+
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+
+input,textarea,select {font-family: inherit; font-size: inherit; font-weight:inherit;}
+* html input,* html textarea,* html select {font-size: 100%;}
+*:first-child+html+input,*:first-child html+textarea,*:first-child+html select {font-size: 100%;}
+
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit;}
+th,td {text-align: left; vertical-align: top;}
+caption {text-align: left;}
+
+pre,code,kbd,samp,tt {font-family: monospace;}
+* html pre,* html code,* html kbd,* html samp,* html tt {font-size: 100%; line-height: 100%;}
+*:first-child+html pre,*:first-child html+code,*:first-child html+kbd,*:first-child+html+samp,*:first-child+html tt {font-size: 108%; line-height: 100%;}
+
+input,select,textarea {font-size: 100%; font-family: Verdana, Helvetica, sans-serif;}
+
+/*structure.css*/
+/* =======================================
+    structure CSS
+========================================== */
 body {
 	background-color: white;
 	border: 1px solid darkgreen;
@@ -10,21 +68,161 @@ body {
 	background-color: lightsteelblue ;
 }
 
-#header {
-	padding: 10px;
-	border: 1px solid dimgray;
-	font-size: x-small;
-}
-
-#footer {
-    padding: 10px;
-	border: 1px solid dimgray;
-}
-
-.section {
+/*header.css*/
+/* =======================================
+    header CSS
+ ========================================= */
+#wrapper #header {
 	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 5px;
+
 }
 
-.vewertable {
+#wrapper #header #siteTitle {
+	text-align: center;
+	font-size: x-large;
+}
+
+/*contents.css*/
+/* =======================================
+    contents CSS
+========================================== */
+#wrapper #contents {
+	/*border: 1px solid black;*/
+	background-color: silver;
+	padding: 5px;
+
+}
+
+/*入力フォームのある部分*/
+/*外側のボックスのデザイン*/
+#wrapper #contents #secionForm {
+	/*border: 1px solid black;*/
+	background-color: gray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+/*内側のテキストのデザイン*/
+#wrapper #contents .section .sectionTitle {
+	text-align: center;
+	font-size: large;
+}
+
+/*作成された画像が入る部分*/
+/*外側のボックスのデザイン*/
+#wrapper #contents #sectionViewMap {
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+/*内側のテーブルのデザイン*/
+#wrapper #contents .section #viewMap {
+	border: 1px solid black;
+	background-color: lightgrey;
+	/*padding: 5px;*/
+
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#wrapper #contents .section #viewMap .vewertable {
+
 	border-right: 1px solid dimgray;
 }
+
+
+/*footer.css*/
+/* =======================================
+    footer CSS
+========================================== */
+
+#wrapper #footer {
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 5px;
+}
+
+#wrapper #footer #copyright {
+	text-align: center;
+	font-size: x-large;
+
+}
+
+
+
+
+
+
+
+/* -----.css*/
+/* =======================================
+    ----- CSS
+========================================== */
+/*
+name       | code
+--------------------
+black      | #000000
+dimgray    | #696969
+gray       | #808080
+darkgray   | #a9a9a9
+silver     | #c0c0c0
+lightgrey  | #d3d3d3
+gainsboro  | #dcdcdc
+whitesmoke | #f5f5f5
+white      | #ffffff
+*/
+
+/*
+keyword  | point
+--------------------
+xx-large | 36
+x-large  | 24
+large    | 18
+medium   | 14
+small    | 13
+x-small  | 12
+xx-small | 11
+*/
+
+/*
+name             |  id   | class | example
+--------------------------------------------------------------------------
+wrapper          |   *   |       | body要素の内容全体
+header           |   *   |       | ヘッダ
+contents         |   *   |       | コンテンツ
+footer           |   *   |       | フッタ
+--------------------------------------------------------------------------
+siteTitle        |   *   |       | サイトタイトル
+description      |   *   |       | 説明
+globalNavi       |   *   |       | グローバルナビゲーションのul要素
+localNavi        |   *   |       | ローカルナビゲーションのul要素
+headerNavi       |   *   |       | ヘッダーナビゲーションのul要素
+footerNavi       |   *   |       | フッターナビゲーションのul要素
+topicPath        |   *   |       | パンくずリストのp要素
+contentsHeader   |   *   |       | コンテンツ内のヘッダ
+contentsNavi     |   *   |       | コンテンツ内のナビゲーション
+contentsFooter   |   *   |       | コンテンツ内のフッタ
+topVisual        |   *   |       | コンテンツ内上部画像
+mainVisual       |   *   |       | コンテンツ内上部画像
+copyright        |   *   |       | 著作権を表記するp要素
+--------------------------------------------------------------------------
+section          |       |   *   | 階層構造の区切り
+sectionTitle     |       |   *   | sectionのタイトル
+sectionLead      |       |   *   | sectionのリード文
+sectionFooter    |       |   *   | sectionのフッタ
+lead             |       |   *   | リード文
+bgTop            |       |   *   | 背景画像で角丸する場合の上の背景
+bgBtm            |       |   *   | 背景画像で角丸する場合の下の背景
+pageTop          |       |   *   | ページトップへ戻るリンクp要素
+unit             |       |   *   | 階層構造の単位、セット
+banner           |       |   *   | バナー広告
+searchBox        |       |   *   | 検索の入力枠
+*/
+
