@@ -132,11 +132,18 @@ body {
 	margin: 0 auto;
 }
 
-#wrapper #contents .section #viewMap .vewertable {
+/*画像テーブル、左側の画像寸法*/
+	width: 1200px;
+	height: 100px;
 
-	border-right: 1px solid dimgray;
-}
 
+/*画像テーブル、左側の画像寸法*/
+	width: 1200px;
+	height: 100px;
+
+/*画像テーブル、右側の画像寸法*/
+	width: 1200px;
+	height: 100px;
 
 /*footer.css*/
 /* =======================================

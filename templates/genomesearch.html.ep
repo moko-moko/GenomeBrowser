@@ -1,0 +1,48 @@
+% layout 'default';
+% title 'GenomeBrowser';
+
+<div id="wrapper">
+
+    <header id="header">
+        <h1 id="siteTitle">
+            UCSC Genome Browser on Human Feb.2009 (GRCh37/hg19) Assembly
+        </h1>
+    <!-- #/header --></header>
+
+    <div id="contents">
+
+        <div class="section" id="secionForm">
+
+                <form method="GET" action="/search">
+                <p class="sectionTitle">
+                    <span id="positionDisplay">chr21:20,000,000-30,000,000 10,000,001bp.</span>
+
+                    <input id="positionInput" type="text" name="genom">
+                    <input id="positionSubmit" type="submit" value="go">
+                <!-- ./sectionTitle --></p>
+                </form>
+
+        <!-- ./section --></div>
+
+        <!-- ビューワーの外枠 -->
+        <div class="section" id="sectionViewMap">
+
+            <table id="viewMap">
+                <tr>
+                    <td>
+                    <img src="genome.jpg" alt="genome" title="genome">
+                    </td>
+                    <!-- 座標を書く　ここから -->
+                    <!-- 座標を書く ここまで-->
+                </tr>
+            <!-- #/viewMap --></table>
+        <!-- ./section --></div>
+
+    <!-- #/contents --></div>
+
+    <footer id="footer">
+        <p id="copyright">copyright</p>
+    <!-- #/footer --></footer>
+
+<!-- #/wrapper --></div>
+
